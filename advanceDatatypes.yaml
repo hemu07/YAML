@@ -1,0 +1,91 @@
+#list syntax in multiline
+
+student: !!seq
+  - marks
+  - name
+  - rollNum
+---
+
+#list syntax in one line
+citi: [delhi, mumbai, surat]
+---
+
+#some keys of the sequence will be empty
+sparse sq: 
+  - hey
+  - how
+  -
+  - Null
+  - sup
+---
+#nested sequences
+-
+  - pink
+  - blue
+  - red
+-
+  - gold
+  - silver
+  - rust
+---
+
+#Keyvalue pairs --> called maps !!map (hashmaps)
+study: devops
+---
+
+#nested Maps
+name: hemu
+role:
+  age: 25
+  job: devops engg.
+---
+
+#same as
+name: hemuj
+role: { age: 25, job: SRE}
+---
+
+#keys may have multiple values --> pairs !!pair
+pair: !!pairs
+  - job: student
+  - job: teacher
+---
+#same as
+pair: !!pairs
+  [ job: student, job: teacher]
+---
+
+#set will allow you to have only unique values:
+name: !!set 
+  ? kunal
+  ? abhishek
+  ? nana
+---
+
+#to give list/sequence as key to another variable --> dictionary !!omap
+dict: #!!omap
+  - hemu:
+     name: hemali jayswal
+     age: 25
+  - khushboo:
+    name: khush jayswal
+    age: 29
+  - dishit:
+    name: dishtya jayswal
+    age: 21
+---
+
+#resuing values using anchors
+likes: &like
+  fruit: mango
+  color: red
+
+person1:
+  name: hemu
+  <<: *like
+
+person2:
+  name: khushboo
+  <<: *like
+  color: black
+

@@ -1,0 +1,19 @@
+{
+    "School": [
+        {
+            "name": "BPS",
+            "principal": "shailesh sota",
+            "Students": [
+                {
+                    "s1": 
+                    {
+                        "name" : "hemali", 
+                        "roll no": 12,
+                        "marks": 456
+                    }
+                }
+            ]
+        }
+
+    ]
+}

@@ -1,0 +1,58 @@
+#string variables
+me: hemu jayswal
+fruit: "apple"
+color: 'pink'
+---
+# add multi lines a single variable
+bio: | 
+  this is multi line.
+  example for demo.
+---
+#write a single line as multiple lines
+msg: >
+  this will
+  be a
+  single line 
+  in output
+---
+# this is same as
+msg: this will be a single line in output
+---
+number: 0712
+marks: 3153.45
+booleanvalue: Yes # can use: n, N, false, False, FALSE
+# y, Y , YES, Yes
+
+# to specify variable type use !! else yaml detects on its own the data type
+zero: !!int 0
+positiveNum: !!int 22
+negativeNum: !!int -22
+binaryNum: !!int 10110
+octalNum: !!int 06545
+hexaNum: !!int 0x11
+ # comma: !!int +540_000  #what is the issue here?
+
+#floating numbers
+mark: !!float 23.44
+infinite: !!float .inf
+not a num: .nan
+
+#boolean data types
+isPass: !!bool true
+
+#string
+name: !!str hemuj
+
+#null 
+value: !!null null # Null, NULL, ~
+
+#date and time
+date: !!timestamp 2002-12-07
+ISTtime: 2002-12-07T02:59:43.01 +5.30
+
+#exponential number
+exponent: 613.E54
+
+
+
+

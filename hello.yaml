@@ -1,0 +1,21 @@
+"apple" : "I am red in color"
+1 : "my roll number"
+---
+
+#lists example
+colors: 
+  - red
+  - blue
+  - violet
+---
+- apfdk
+- jdfnk
+- nlv
+---
+#arrays data type
+flowers: [rose, lily]
+---
+
+{vegies: "tomato", kdsf: "sakffa", dsnl: "kgsd"}
+...
+
